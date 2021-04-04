@@ -40,6 +40,12 @@
 controll=true
 answer='n'
 
+function NMapInstall () {
+    clear
+    sudo apt install nmap -y
+}
+
+
 function Question () {
     clear
     echo -e "\e[1mIP Discovery\e[m\n\nDo you want to scan your network right now?"
@@ -86,6 +92,8 @@ function Scanning () {
     less < /tmp/ip_discovery.txt
 
 }
+
+[ -x "$(which nmap)" ] || NMapInstall     # NMap exists?
 
 while [ "$controll" = true ] ; do
     Question
