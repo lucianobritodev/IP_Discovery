@@ -1,10 +1,10 @@
-# GitHub-Desktop-For-Linux-Installer
+# IP Discovery
 
 ![](/IP_Discovery.png)
 
 ## Description
 
-script created to perform equipment discoveries on the local network.
+Script created to perform equipment discoveries on the local network.
 
 
 ## Contributors
